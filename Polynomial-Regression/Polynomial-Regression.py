@@ -23,7 +23,7 @@ lin_regressor2.fit(X_poly, Y)
 print("Model Trained")
 
 #visualising the linear regression model
-plt.title("Truth or Bluff(Linear Regression)")
+plt.title("Linear Regression")
 plt.xlabel("Position Level")
 plt.ylabel("Salary")
 plt.scatter(X,Y, color="red",label="Original Values")
@@ -34,7 +34,7 @@ print("Showing Graph for Linear Regression(Close it to see Polynomial Regression
 plt.show()
 
 #visualising the polynomial regression model
-plt.title("Truth or Bluff(Polynomial Regression)")
+plt.title("Polynomial Regression")
 plt.xlabel("Position Level")
 plt.ylabel("Salary")
 plt.scatter(X,Y, color="red",label="Original Values")
@@ -46,9 +46,3 @@ print("Showing Graph for Polynomial Regression")
 plt.show()
 
 
-a = np.array([6.5],dtype="int").reshape(-1,1)
-b= lin_regressor1.predict(a)  
-print(b)
-
-print(lin_regressor2.predict(poly_regressor.fit_transform(np.array([6.5], dtype="int").reshape(-1,1))))
-print(lin_regressor2.predict(poly_regressor.fit_transform([[6.5]])))
