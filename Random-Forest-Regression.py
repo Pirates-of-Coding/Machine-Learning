@@ -27,6 +27,6 @@ print("Graph opened")
 plt.show()
 
 
-a = np.array([6.5],dtype="int").reshape(-1,1)
-b= regressor.predict(a)  
-print(b)
+#a = np.array([6.5],dtype="int").reshape(-1,1)
+#b= regressor.predict(a)  
+#print(b)
