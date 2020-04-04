@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 dataset = pd.read_csv("Position_Salaries.csv")
 X = dataset.iloc[:,1:2].values
 Y = dataset.iloc[:,2].values
+print("Dataset Imported")
 
 #fitting Linear Regression to dataset
 from sklearn.linear_model import LinearRegression
@@ -19,6 +20,7 @@ poly_regressor = PolynomialFeatures(degree = 4)
 X_poly = poly_regressor.fit_transform(X)
 lin_regressor2 = LinearRegression()
 lin_regressor2.fit(X_poly, Y)
+print("Model Trained")
 
 #visualising the linear regression model
 plt.title("Truth or Bluff(Linear Regression)")
@@ -26,12 +28,16 @@ plt.xlabel("Position Level")
 plt.ylabel("Salary")
 plt.scatter(X,Y, color="red")
 plt.plot(X,lin_regressor1.predict(X))
+print("Showing Graph for Linear Regression(Close it to see Polynomial Regression Graph)")
+plt.show()
 
 #visualising the polynomial regression model
-plt.title("Truth or Bluff(Linear Regression)")
+plt.title("Truth or Bluff(Polynomial Regression)")
 plt.xlabel("Position Level")
 plt.ylabel("Salary")
 plt.scatter(X,Y, color="red")
 #plt.plot(X,lin_regressor2.predict(X_poly))
 #generalised >>>>>>>
 plt.plot(X,lin_regressor2.predict(poly_regressor.fit_transform(X)))
+print("Showing Graph for Polynomial Regression")
+plt.show()
