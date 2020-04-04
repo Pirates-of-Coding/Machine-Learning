@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 dataset = pd.read_csv("Position_Salaries.csv")
 X = dataset.iloc[:,1:2].values
 Y = dataset.iloc[:,2:3].values
+print("Dataset Imported")
 
 #feature scaling
 from sklearn.preprocessing import StandardScaler
@@ -21,10 +22,13 @@ Y = sc_Y.fit_transform(Y)
 from sklearn.svm import SVR
 regressor = SVR(kernel = "rbf")
 regressor.fit(X,Y.ravel())
+print("Model Trained")
 
 #visualising the SVR results
 plt.title("Truth or Bluff(SVR)")
 plt.xlabel("Position Level")
 plt.ylabel("Salary")
 plt.scatter(X,Y, color="red")
+print("Now showing graph")
 plt.plot(X,regressor.predict(X))
+plt.show()
