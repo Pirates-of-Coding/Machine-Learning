@@ -25,7 +25,7 @@ regressor.fit(X,Y.ravel())
 print("Model Trained")
 
 #visualising the SVR results
-plt.title("Truth or Bluff(SVR)")
+plt.title("SVR")
 plt.xlabel("Position Level")
 plt.ylabel("Salary")
 plt.scatter(X,Y, color="red",label="Original Values")
