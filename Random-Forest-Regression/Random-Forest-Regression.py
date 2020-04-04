@@ -13,6 +13,7 @@ print("Dataset Imported")
 from sklearn.ensemble import RandomForestRegressor
 regressor = RandomForestRegressor(n_estimators=300, random_state=0)
 regressor.fit(X,Y)
+print("Model Trained")
 
 # Visualising the Random Forest Regression results (higher resolution)
 X_grid = np.arange(min(X), max(X), 0.01)
