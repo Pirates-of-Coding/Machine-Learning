@@ -8,6 +8,7 @@ import pandas as pd
 dataset = pd.read_csv("50_Startups.csv")
 X = dataset.iloc[:,:-1]
 Y = dataset.iloc[:,-1]
+print("Dataset Imported")
 
 
 #Encoding categorical data
@@ -31,6 +32,7 @@ X_train, X_test, Y_train, Y_test = train_test_split(newEncoded_X,Y,test_size = 0
 from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor.fit(X_train,Y_train)
+print("Model Trained")
 
 #5 independent variable and 1 dependent variable, so graph will be complex 
 #and in higher dimensions
@@ -56,6 +58,7 @@ newEncoded_X = np.append(np.ones(shape=(50,1), dtype="int"),newEncoded_X,axis=1)
 X_optimal = newEncoded_X[:,[0,1,2,3,4,5]]
 regressor_OLS = sm.OLS(endog = Y, exog= X_optimal).fit()
 print(regressor_OLS.summary())
+
 
 X_optimal = newEncoded_X[:,[0,1,3,4,5]]
 regressor_OLS = sm.OLS(endog=Y, exog=X_optimal).fit()
