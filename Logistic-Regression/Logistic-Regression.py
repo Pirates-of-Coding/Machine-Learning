@@ -38,8 +38,8 @@ cm = confusion_matrix(Y_test, Y_pred)
 print("Confusion Matrix :- ")
 print(cm)
 
-print("Total Correct prediction = ", cm[0][0] + cm[1][0] )
-print("Total Incorrect prediction = ", cm[0][1] + cm[1][1] )
+print("Total Correct prediction = ", cm[0][0] + cm[1][1] )
+print("Total Incorrect prediction = ", cm[0][1] + cm[1][0] )
 
 # Visualising the Training set results
 from matplotlib.colors import 
