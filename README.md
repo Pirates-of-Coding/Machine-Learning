@@ -6,7 +6,7 @@ This repo contains code that i've learnt from course on Machine Learning via Ude
 
 ##Purpose :-
 
-1- Many of the codes shown in the lecture are not working because, everyday some updates are coming and hence new 
+1- Many of the codes shown in the above mentioned lecture are not working because, everyday some updates are coming and hence new 
 features or revision to existing fucntionalities happening all time. So, i've written working code on the topics taught in that course.
 
 2- To learn Machine Learning codes from very basic step by step.
