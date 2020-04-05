@@ -4,7 +4,7 @@ This repo contains work on Machine Learning with python. It basically contains c
 ## Description :-
 This repo contains code that i've learnt from course on Machine Learning via Udemy - https://www.udemy.com/share/101Wci/
 
-##Purpose :-
+## Purpose :-
 
 1- Many of the codes shown in the above mentioned lecture are not working because, everyday some updates are coming and hence new 
 features or revision to existing functionalities happening all the time. So, i've written working code on the topics taught in that course with proper comments and efficient algorithms.
