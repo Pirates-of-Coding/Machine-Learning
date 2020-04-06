@@ -23,7 +23,7 @@ X_test = sc.fit_transform(X_test)
 print("Training and Test set is scaled")
 
 
-#fitting Naive-Bayes Classifier to the Training Set
+#fitting Decision-Tree Classifier to the Training Set
 from sklearn.tree import DecisionTreeClassifier
 classifier = DecisionTreeClassifier(criterion="entropy", random_state=0)
 classifier.fit(X_train,Y_train)
