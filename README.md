@@ -1,6 +1,6 @@
 # Machine-Learning
 This repo contains work on Machine Learning with python. It basically contains codes on various topics of ML for further use on any big project.
-This code is maintained by @LunaticPrakash
+This code is maintained by <a href="https://github.com/LunaticPrakash">@LunaticPrakash</a>
 ## Description :-
 This repo contains code that i've learnt from course on Machine Learning via Udemy - https://www.udemy.com/share/101Wci/
 
